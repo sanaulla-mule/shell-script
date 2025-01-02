@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=$(-u 0)
+USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 
@@ -35,3 +35,5 @@ then
   exit 1
 else 
   echo " Installing  git ...SUCCESS"
+
+  fi
