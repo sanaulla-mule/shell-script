@@ -25,7 +25,7 @@ then
     exit 1 # other then 0
 
 fi  
-    dnf list installed mysql &>>$LOG_FILE_NAME
+    dnf list installed mysql 
 
  if [ $? -ne 0 ] 
  
@@ -34,7 +34,7 @@ fi
         VALIDATE $? "Installing Mysql"
 
  else
-        echo  "alredy installed mysql" &>>$LOG_FILE_NAME
+        echo  "alredy installed mysql" 
 fi
 
           dnf list installed git &>>$LOG_FILE_NAME
